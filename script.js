@@ -143,10 +143,15 @@ function selectAnswer(e) {
 ///////////////////////////////////////////////
 function reset() {
   nextBtn.style.display = "none";
-  while (answerBtnContainer.firstChild) {
-    answerBtnContainer.removeChild(answerBtnContainer.firstChild);
-  }
+  // while (answerBtnContainer.firstChild) {
+  //   answerBtnContainer.removeChild(answerBtnContainer.firstChild);
+  // }
+  // for (let i = answerBtnContainer.firstElementChild; i >= 0; i--) {
+  //   answerBtnContainer.removeChild(answerBtnContainer.children[i]);
+  // }
+  answerBtnContainer.innerHTML = " ";
 }
+
 /////////////////////////////////////////////
 
 function showscore() {
